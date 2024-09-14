@@ -3,7 +3,6 @@ from .models import Product, Stock, StockProduct
 from decimal import Decimal
 
 class ProductSerializer(serializers.ModelSerializer):
-    print('Hello')
     class Meta:
         model = Product
         fields = ['id', 'title', 'description']

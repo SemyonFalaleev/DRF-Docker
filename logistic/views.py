@@ -17,6 +17,6 @@ class StockViewSet(ModelViewSet):
     queryset = Stock.objects.all()
     serializer_class = StockSerializer
     filter_backends = [SearchFilter]
-    search_fields = ['positions__product__title__icontains', 'positions__product__description__icontains']
+    search_fields = ['positions__product__title', 'positions__product__description']
 
 
